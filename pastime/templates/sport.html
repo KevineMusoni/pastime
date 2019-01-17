@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container white clack-text">
+    <div class="row">
+        <img src="{{sport.photo.url}}" id="image" class="img-responsive col-xs-12" alt="">
+    </div>
+    <div class="row">
+        <h2 class="text-center col-xs-12">{{sport.sport_name}}</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="text-center col-xs-12">
+            <br>
+            <h4>Description: {{sport.description}}</h4>
+
+            <h4>Location: {{sport.location}}</h4>
+            <br>
+            <br>
+            <br>
+            <h4>
+                <span>
+                    <input id="myInput" type="text" value="https://kevypastime.herokuapp.com/image/{{image.id}}"><a
+                        href="#" class="btn" onclick="myFunction()">copy~link</a>
+                </span>
+            </h4>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

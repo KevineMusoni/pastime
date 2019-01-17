@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<nav class="navbar navbar-expand-sm   navbar-light bg-light" style="opacity:0.6">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <img src="../static/images/icon.png" class="navbar-brand" >
+    <a class="navbar-brand" href="{% url 'pastime' %}" style="color:black" id="logo-title"><b>Pastime</b></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" style="font-size: 20px;font-family: 'Playfair Display', serif; color: black;" href="#"><b>login</b></a>
+            </li>
+
+            <li class="nav-item dropdown dmenu">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: 20px;font-family: 'Playfair Display', serif;color: black;">
+                    <b>sports</b>
+                </a>
+                <div class="dropdown-menu sm-menu">
+                    <a class="dropdown-item" href=""><b>martial arts</a>
+                    <a class="dropdown-item" href="#"><b>cycling</b></a>
+                    <a class="dropdown-item" href="#"><b>other...</b></a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" role="search" action="{% url 'search_results' %}">
+            <input class="form-control mr-sm-2" type="search" placeholder="search sport..." name="article">
+        </form>
+    </div>
+</nav>
+</html>

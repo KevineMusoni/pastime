@@ -1,0 +1,1 @@
+web: gunicorn pastimeapp.wsgi --log-file -

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Charm');
+@import url('https://fonts.googleapis.com/css?family=Economica');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.bgslider{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.bgslider li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    animation: images 18s linear infinite;
+}
+.bgslider li:nth-child(1){
+    background-image: url("../images/img1.jpeg");
+}
+
+.bgslider li:nth-child(2){
+    background-image: url("../images/img2.jpeg");
+    animation-delay: 6s;
+}
+
+.bgslider li:nth-child(3){
+    background-image: url("../images/img5.jpeg");
+    animation-delay: 6s;
+}
+.bgslider li:nth-child(4){
+    background-image: url("../images/img4.jpeg");
+    animation-delay: 12s;
+}
+@keyframes images{
+    0%{opacity:0; animation-timing-function: ease-in;}
+    10%{opacity:1; animation-timing-function: ease-out;}
+    25%{opacity:1; transform: scale(1);}
+    50%{opacity:1; transform: scale(2) rotate(20deg);}
+    100%{opacity:0;}
+}
+
+#content{
+    height: 100vh;
+    width: 100vw;
+
+}
+.title1{
+    font-family: 'Charm', cursive;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size:50px;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    width:300px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50px;
+    position: fixed;
+ 
+}
+.title2{
+    font-family: 'Charm', cursive;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size:30px;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    width:300px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+ 
+}
+.title3{
+    font-family: 'Charm', cursive;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size:40px;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    width:350px;
+    height: 70px;
+    text-align: center;
+    border-radius: 25px;
+ 
+}
+.title4{
+    font-family: 'Charm', cursive;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size:30px;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    width:300px;
+    height: 170px;
+    text-align: center;
+    border-radius: 25px;
+}
+/* footer */
+
+ footer {
+     margin-top: 353px;
+
+        font-family: 'Signika', sans-serif;
+     }
+     .bg-grey {
+        background: black;
+     }
+     .logo-footer {
+        margin-bottom: 40px;
+     }
+     footer {
+            color: grey;
+     }
+     footer p, a {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+footer h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    position: relative;
+}
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+     .btn-footer {
+                 color: grey;
+              
+                text-decoration: none;
+                border: 1px solid;
+                border-radius: 43px;
+                font-size: 13px;
+                padding: 7px 30px;
+                line-height: 47px;
+     }
+     .btn-footer:hover {
+                
+                text-decoration: none;
+               
+     }
+    .form-footer input[type="text"] {
+        border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+::placeholder {
+    padding-left: 50px;
+    font-style: italic;
+    color: black;
+}
+ .form-footer input[type="button"] {
+    border: none;
+    background:#232323;
+        margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+     .social .fa {
+    color: grey;
+    font-size: 22px;
+    padding: 10px 15px;
+    background: #3c3c3c;
+}
+     footer ul li {
+    list-style: none;
+    display: block;
+}
+  footer ul  {
+   padding-left: 0;
+}
+footer ul  li a{
+  text-decoration: none;
+  color: grey;
+  text-decoration:none;
+}
+a:hover {
+    text-decoration: none;
+    color:grey;
+}
+
+.navbar{
+    background: #0c73cc !important;
+}
+
+.dropdown{
+    border-radius:0;
+    border:0;
+}
+.dropdown-menu{
+    background: #0c73cc;
+    border:0;
+    top:80%;
+    border-radius:0px 0px 5px 5px;
+
+}
+.dropdown-item:hover{
+    background:#085ca5;
+    color:black;
+}
+.dropdown-menu a{
+    color:black;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+} 
+.navbar .nav-item .nav-link{
+    color: black;
+    
+}
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
+    color:red !important;  
+}
+#footer-title{
+    font-family: 'Economica', sans-serif;
+    font-size: 40px;
+}
+#logo-title{
+    font-size: 30px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+::placeholder {
+  color:black;
+  font-size: 1.5em;
+  font-family: 'Economica', sans-serif;
+}

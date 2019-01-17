@@ -37,19 +37,19 @@ class Category(models.Model):
 
     def delete_category(self):
         self.delete()
-
+        
     @classmethod
     def update_category(cls,id,category):
         category = cls.objects.get(pk=id)
         category = cls(category=category)
         category.save()
-
+      
 class Sport(models.Model):
     sport_name = models.CharField(max_length = 60)
     description = models.TextField()
     location = models.ForeignKey(Location)
     category = models.ManyToManyField(Category)
-    photo = models.SportField(upload_to = 'articles/')
+    photo = models.ImageField(upload_to = 'articles/')
 
     def __str__(self):
         return self.sport_name
