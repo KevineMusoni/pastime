@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Charm');
+body{
+	background-color: #fafafa!important;
+	margin-top: 30px;
+}
+#title{
+  text-align: center; 
+  font-family: 'Charm', cursive;
+  font-size: 40px; 
+  color: black;
+}
+.sub-title{
+  text-align: center;
+  
+}
+.nav-title{
+  font-family: 'Charm', cursive;
+}
+.loginform{
+  background-color: white;
+  max-width: 325px;
+  float: left;
+  max-height: 473px;
+  position: absolute;
+  border: solid 1px #ddd;
+  display: inline-table;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  padding-bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.icon{
+    background-position: -98px -150px;
+    height: 51px;
+    width: 175px;
+}
+small{
+    display: none!important;
+}
+label{
+    display: none!important;
+}
+.invite{
+    line-height: 20px;
+    font-size: 17px;
+    margin: 0 40px 10px;
+    color: #999;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    border: 0;
+    margin-top: 0;
+}
+.alert{
+    display: none;
+}
+.login {
+  float: right;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  color: black;
+}
+
+.login form {
+  max-width:320px;
+  width:90%;
+  margin:0 auto;
+  background-color:#ffffff;
+  padding:40px;
+  border-radius:4px;
+  color:#505e6c;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.login .illustration {
+  text-align:center;
+  padding:0 0 20px;
+  font-size:100px;
+  color:rgb(244,71,107);
+  position:relative;
+}
+
+.login form .form-control {
+  background:#f7f9fc;
+  border:none;
+  border-bottom:1px solid #dfe7f1;
+  border-radius:0;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:8px;
+  height:42px;
+}
+
+.login form .btn-primary {
+  background:#474ef4;
+  border:none;
+  border-radius:4px;
+  padding:11px;
+  box-shadow:none;
+  margin-top:26px;
+  text-shadow:none;
+  outline:none !important;
+}
+
+.login form .btn-primary:active {
+  transform:translateY(1px);
+}
+
+.login form .forgot {
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:#6f7a85;
+  opacity:0.9;
+  text-decoration:none;
+}
+
+.login form .forgot:hover, .login form .forgot:active {
+  opacity:1;
+  text-decoration:none;
+}
+.login form 
+.btn-primary:hover,
+.login form 
+.btn-primary:active {
+  background:#4f34f2;
+}

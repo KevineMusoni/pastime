@@ -23,7 +23,10 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" style="font-size: 20px;font-family: 'Playfair Display', serif; color: black;" href="#"><b>login</b></a>
+                <a class="nav-link" style="font-size: 20px;font-family: 'Playfair Display', serif; color: black;" href="/accounts/login"><b>login</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size: 20px;font-family: 'Playfair Display', serif; color: black;" href="{% url 'myaccount' %}"><b>profile</b></a>
             </li>
 
             <li class="nav-item dropdown dmenu">
@@ -31,9 +34,9 @@
                     <b>sports</b>
                 </a>
                 <div class="dropdown-menu sm-menu">
-                    <a class="dropdown-item" href=""><b>martial arts</a>
+                    <a class="dropdown-item" href="#"><b>martial arts</a>
                     <a class="dropdown-item" href="#"><b>cycling</b></a>
-                    <a class="dropdown-item" href="#"><b>other...</b></a>
+                    <a class="dropdown-item" href="/allsports/{{allsports.id}}"><b>other...</b></a>
                 </div>
             </li>
         </ul>

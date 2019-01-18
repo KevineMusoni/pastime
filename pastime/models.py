@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.contrib.auth.models import User
+from django.dispatch import receiver
 # Create your models here.
 # adding sport details
 
@@ -86,3 +87,16 @@ class Sport(models.Model):
     def search_by_category(cls,search_term):
         sports = cls.objects.filter(category__category=search_term)
         return sports
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
+    Name = models.TextField(default="my name")
+    profile_picture = models.ImageField(upload_to='users/', default='user.png')
+    bio = models.TextField(default="my bio")
+    age = models.TextField(default="my age")
+    
+    def create_user_profile(sender, instance, created, **kwargs):
+        if created:
+            Profile.objects.create(user=instance)
+    def save_user_profile(sender, instance, **kwargs):
+        instance.profile.save()

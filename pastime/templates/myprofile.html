@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% block content %}
+<div class="row userbody">
+    <div id="userdetails" class="row col-12 mb-2">
+        <div class="col-sm-4">
+            <img src="{{user_object.profile.profile_picture.url}}" width="152" height="152" class="rounded-circle border userimage">
+        </div>
+        <div class="col-sm-8">
+            <div style="margin-bottom: 20px;">
+                <h3 style="vertical-align: middle">{{user_object.username}}</h3>
+                <a href="{%  url 'edit' %}">
+                    <button class="editbtn">
+                        <span class="edittext">Edit Profile</span>
+                    </button>
+                    <a href="/accounts/logout" class="editbtn">
+                        Log out
+                    </a>
+                </a>
+                <button style="display: contents" data-toggle="modal" data-target="#logoutmodal">
+                    <span class="instaglyph settings"></span>
+                </button>
+            </div>
+            <div>
+                <strong style="font-size: 15px">name:{{ user_object.profile.Name }}</strong>
+            </div>
+            <div><span style="font-size: 15px">age:{{ user_object.profile.age }}</span></div>
+            <div><span style="font-size: 15px">bio:{{ user_object.profile.bio }}</span></div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
